@@ -1,5 +1,5 @@
 #include "game.h"
-void fillrand(int n, int m, std::vector<std::vector<int>>& a)
+void fillrand(int n, int m, std::vector< std::vector< int > >& a)
 {
     srand(time(NULL));
     for (int i = 0; i < n; i++) {

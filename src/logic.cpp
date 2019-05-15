@@ -1,5 +1,5 @@
 #include "game.h"
-void logic(int n, int m, std::vector<std::vector<int>>& a)
+void logic(int n, int m, std::vector< std::vector< int > >& a)
 {
     int f, c[n * m] = {0}, i, j;
     f = 0;
