@@ -26,6 +26,27 @@ build/outp.o: src/outp.cpp src/game.h
 build/fillrand.o: src/fillrand.cpp src/game.h
 	$(OBJ)
 
+build/fillbill.o: src/fillbill.cpp src/game.h
+	$(OBJ)
+
+build/fillpuls.o: src/fillpuls.cpp src/game.h
+	$(OBJ)
+
+build/filldroz.o: src/filldroz.cpp src/game.h
+	$(OBJ)
+
+build/fillpalk.o: src/fillpalk.cpp src/game.h
+	$(OBJ)
+
+build/fillskre.o: src/fillskre.cpp src/game.h
+	$(OBJ)
+
+build/fillprac.o: src/fillprac.cpp src/game.h
+	$(OBJ)
+
+build/filltumb.o: src/filltumb.cpp src/game.h
+	$(OBJ)
+
 clean:
 	rm build/*.o
 	rm bin/*.exe
