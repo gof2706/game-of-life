@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Werror
+CFLAGS = -Wall
 SFML = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 OBJ = g++ $(CFLAGS) -c $< -o $@ $(SFML) 
 
