@@ -1,5 +1,6 @@
 CFLAGS = -Wall -Werror
-OBJ = g++ $(CFAGS) -c $< -o $@
+SFML = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+OBJ = g++ $(CFLAGS) -c $< -o $@ $(SFML) 
 
 .PHONY: clean
 
@@ -13,7 +14,7 @@ target2:
 
 bin/game_of_life.exe: build/main.o build/outp.o build/fillrand.o build/logic.o build/fillbill.o build/fillpuls.o build/filldroz.o build/fillpalk.o build/fillskre.o build/fillprac.o build/filltumb.o
 
-	g++ $(CFLAGS) $^ -o $@
+	g++ $(CFLAGS) $^ -o $@ $(SFML)
 
 build/main.o: src/main.cpp src/game.h
 	$(OBJ)
