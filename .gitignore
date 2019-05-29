@@ -1,0 +1,7 @@
+*.dat
+*.txt
+*.swp
+bin/*.exe
+bin
+build/*.o
+build
