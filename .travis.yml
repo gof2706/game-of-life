@@ -1,5 +1,11 @@
 language: c++
 dist: xenial
 
+before_script:
+  
+  - wget https://www.sfml-dev.org/files/SFML-2.5.1-linux-gcc-64-bit.tar.gz -O /tmp/sfml.tar.gz
+  - tar -xvf /tmp/sfml.tar.gz
+  - sudo cp -r SFML-2.5.1/* /usr/
+
 script:
   - git ls-files src/ | xargs clang-format -i && make
