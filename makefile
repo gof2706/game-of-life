@@ -11,7 +11,8 @@ target1:
 target2:
 	mkdir -p bin
 
-bin/game_of_life.exe: build/main.o build/outp.o build/fillrand.o build/logic.o
+bin/game_of_life.exe: build/main.o build/outp.o build/fillrand.o build/logic.o build/fillbill.o build/fillpuls.o build/filldroz.o build/fillpalk.o build/fillskre.o build/fillprac.o build/filltumb.o
+
 	g++ $(CFLAGS) $^ -o $@
 
 build/main.o: src/main.cpp src/game.h
