@@ -18,7 +18,7 @@ target3:
 
 bin/game_of_life.exe: build/src/main.o build/src/outp.o build/src/fillrand.o build/src/logic.o build/src/fillbill.o build/src/fillpuls.o build/src/filldroz.o build/src/fillpalk.o build/src/fillskre.o build/src/fillprac.o build/src/filltumb.o
 
-	g++ $(CFLAGS) $^ -o $@ $(SFML)
+	g++ -std=c++11 $(CFLAGS) $^ -o $@ $(SFML)
 
 build/src/main.o: src/main.cpp src/game.h
 	$(OBJ)
