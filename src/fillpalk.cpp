@@ -9,7 +9,7 @@ void fillpalk(int n, int m, std::vector< std::vector< int > >& a)
         }
     }
 
-    f.open("../src/txt/palk.txt", ios::in);
+    f.open("../txt/palk.txt", ios::in);
 
     int x;
     if (!f)

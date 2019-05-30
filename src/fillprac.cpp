@@ -10,7 +10,7 @@ void fillprac(int n, int m, std::vector< std::vector< int > >& a)
     vector< int > t;
     fstream f;
 
-    f.open("../src/txt/prac.txt", ios::in);
+    f.open("../txt/prac.txt", ios::in);
 
     int x;
     if (!f)
