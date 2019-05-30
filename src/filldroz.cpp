@@ -1,9 +1,14 @@
 #include "game.h"
 void filldroz(int n, int m, std::vector< std::vector< int > >& a)
 {
-    int g;
     vector< int > t;
     fstream f;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            a[i][j] = 0;
+        }
+    }
 
     f.open("../src/txt/droz.txt", ios::in);
 
