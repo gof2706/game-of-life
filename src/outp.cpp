@@ -1,6 +1,18 @@
 #include "game.h"
 void outp(int n,int m,std::vector< std::vector< int > >& a,RenderWindow& app, Sprite& s,int w)
 { 
+	Font font;
+  if (!font.loadFromFile("../font/16761.ttf")) {
+    // ошибка...
+  }
+  Text text1;
+text1.setFont(font);
+  text1.setString("Escape-exit R-rand B-billiard P-pulsar S-skrepka T-tumbler D-drozd W-prachka Q-stick");
+  text1.setCharacterSize(15);
+  text1.setFillColor(Color::Black);
+  text1.setPosition(30,605);
+
+
     sf::Event event;
     while (app.pollEvent(event)) {
       if (event.type == sf::Event::Closed) {
@@ -36,8 +48,8 @@ void outp(int n,int m,std::vector< std::vector< int > >& a,RenderWindow& app, Sp
             fillpalk(n, m, a);
         }
  app.clear(Color::White);
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < m; j++) {
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < m; j++) 
             {
                 if (a[i][j] == 0)
                     s.setTextureRect(IntRect(0 * w, 0, w, w));
@@ -47,6 +59,7 @@ void outp(int n,int m,std::vector< std::vector< int > >& a,RenderWindow& app, Sp
                 app.draw(s);
             }
         }
+	app.draw(text1);
     app.display();
 }
 
