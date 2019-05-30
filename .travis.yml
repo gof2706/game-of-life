@@ -8,4 +8,5 @@ before_script:
   - sudo cp -r SFML-2.5.1/* /usr/
 
 script:
-  - git ls-files src/ | xargs clang-format -i && make
+  - git ls-files src/ | xargs clang-format -i && make all && make bin/goltest.exe && cd bin/ && ./goltest.exe
+
