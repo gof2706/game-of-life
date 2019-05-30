@@ -1,7 +1,7 @@
 #include "game.h"
 void outp(int n,int m,std::vector< std::vector< int > >& a,RenderWindow& app, Sprite& s,int w)
 {
-  while (app.isOpen()) {
+//  while (app.isOpen()) 
     sf::Event event;
     while (app.pollEvent(event)) {
       if (event.type == sf::Event::Closed) {
@@ -46,6 +46,5 @@ if (Keyboard::isKeyPressed(Keyboard::R)) {
             }
         }
     app.display();
- logic(n, m, a);
 }
-}
+
