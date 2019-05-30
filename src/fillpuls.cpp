@@ -10,7 +10,7 @@ void fillpuls(int n, int m, std::vector< std::vector< int > >& a)
     vector< int > t;
     fstream f;
 
-    f.open("../src/txt/puls.txt", ios::in);
+    f.open("../txt/puls.txt", ios::in);
 
     int x;
     while (!f.eof()) {

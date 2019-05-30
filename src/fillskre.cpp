@@ -10,7 +10,7 @@ void fillskre(int n, int m, std::vector< std::vector< int > >& a)
     vector< int > t;
     fstream f;
 
-    f.open("../src/txt/skre.txt", ios::in);
+    f.open("../txt/skre.txt", ios::in);
 
     int x;
     if (!f)

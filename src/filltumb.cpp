@@ -8,7 +8,7 @@ void filltumb(int n, int m, std::vector< std::vector< int > >& a)
             a[i][j] = 0;
         }
     }
-    f.open("../src/txt/tumb.txt", ios::in);
+    f.open("../txt/tumb.txt", ios::in);
 
     int x;
     if (!f)
