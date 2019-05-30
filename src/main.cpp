@@ -12,6 +12,8 @@ int main()
     while (app.isOpen()) {
         outp(n, m, a, app, s, w);
         logic(n, m, a);
+	sf::Time t = sf::milliseconds(100);
+        sf::sleep(t);
     }
     return 0;
 }
