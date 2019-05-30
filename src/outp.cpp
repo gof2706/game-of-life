@@ -9,7 +9,10 @@ void outp(int n,int m,std::vector< std::vector< int > >& a,RenderWindow& app, Sp
         
       }
     }   
-if (Keyboard::isKeyPressed(Keyboard::R)) {
+	if (Keyboard::isKeyPressed(Keyboard::Escape)) {
+            app.close();
+	}
+	if (Keyboard::isKeyPressed(Keyboard::R)) {
             fillrand(n, m, a);
         }
         if (Keyboard::isKeyPressed(Keyboard::B)) {
