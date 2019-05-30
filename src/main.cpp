@@ -3,7 +3,7 @@
 int main()
 {
     Texture t;
-    t.loadFromFile("../src/img/wb.jpg");
+    t.loadFromFile("../img/wb.jpg");
     Sprite s(t);
     int w = 15;
     int n = 70, m = 40;
